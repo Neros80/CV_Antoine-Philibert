@@ -8,6 +8,12 @@ body {
   font-family: "Roboto", sans-serif;
   color: #4C4B4F;
 }
+body h2 {
+  text-transform: uppercase;
+}
+body h3 {
+  text-transform: uppercase;
+}
 
 header {
   position: absolute;
@@ -41,9 +47,10 @@ header {
   top: -60px;
   width: 100%;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #0084C7;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 .info h3 {
   border-bottom: 3px solid #98979B;
@@ -60,6 +67,7 @@ header {
 }
 .info .languages h3 {
   width: 100%;
+  text-transform: uppercase;
 }
 .info .languages--text {
   width: 49%;
@@ -93,6 +101,9 @@ header {
   margin-bottom: 1.25rem;
   top: 5px;
 }
+.info .logiciels p {
+  padding: 0 1rem;
+}
 .info .reseaux {
   display: flex;
   flex-wrap: wrap;
@@ -100,6 +111,7 @@ header {
 }
 .info .reseaux h3 {
   width: 100%;
+  text-transform: uppercase;
 }
 .info .reseaux img {
   align-items: center;
@@ -119,14 +131,16 @@ header {
 }
 .skills .intro {
   margin: 1.5rem;
+  padding-bottom: 2rem;
 }
 .skills .intro p {
-  padding-top: 1rem;
+  padding: 1rem;
 }
 .skills h3 {
   border-bottom: 3px solid #98979B;
   padding: 1rem 0;
   width: 100%;
+  text-transform: uppercase;
 }
 .skills .experiences {
   margin: 1.5rem;
@@ -169,6 +183,29 @@ header {
 }
 .skills .hobbies {
   margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills .hobbies h3 {
+  border-bottom: 3px solid #98979B;
+  padding: 1rem 0;
+  width: 100%;
+}
+.skills .hobbies__content {
+  display: flex;
+  margin: auto;
+  padding-top: 3rem;
+  width: 70%;
+  justify-content: space-between;
+}
+.skills .hobbies__content--act {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.skills .hobbies__content--act img {
+  width: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

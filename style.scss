@@ -9,6 +9,12 @@ body{
     margin: auto;
     font-family: 'Roboto', sans-serif;
     color: #4C4B4F;
+    h2{
+        text-transform: uppercase;
+    }
+    h3{
+        text-transform: uppercase;
+    }
 }
 header{
     position: absolute;
@@ -42,9 +48,10 @@ header{
             top: -60px;
             width: 100%;
             text-align: center;
-            font-size: 3.5rem;
+            font-size: 3rem;
             color: #0084C7;
             margin-bottom: 0;
+            text-transform: uppercase;
         }
 
     }
@@ -65,6 +72,7 @@ header{
         width: 100%;
         h3{
             width: 100%;
+            text-transform: uppercase;
         }
         &--text{
             width: 49%;
@@ -100,6 +108,11 @@ header{
             }
         }
     }
+    .logiciels{
+        p{
+            padding: 0 1rem;
+        }
+    }
     .reseaux{
         display: flex;
         flex-wrap: wrap;
@@ -107,6 +120,7 @@ header{
         
         h3{
             width: 100%;
+            text-transform: uppercase;
         }
         img{
             align-items: center;
@@ -129,14 +143,16 @@ header{
   
     .intro{
         margin: 1.5rem;
+        padding-bottom: 2rem;
         p{
-            padding-top: 1rem;
+            padding: 1rem;
         }
     }
     h3{
         border-bottom: 3px solid #98979B;
         padding: 1rem 0;
         width: 100%;
+        text-transform: uppercase;
     }
     .experiences{
         margin: 1.5rem;
@@ -186,6 +202,29 @@ header{
         }
     }
     .hobbies{
-        margin: 2rem
+        margin: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        h3{
+            border-bottom: 3px solid #98979B;
+            padding: 1rem 0;
+            width: 100%;
+        }
+        &__content{
+            display: flex;
+            margin: auto;
+            padding-top: 3rem;  
+            width: 70%;
+            justify-content: space-between;          
+            &--act{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                img{
+                    width: 80px;
+                }
+            }
+        }
     }
 }
