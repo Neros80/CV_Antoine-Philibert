@@ -1,230 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-
-body{
-    background-color: light;
-    display: flex;
-    flex-wrap: wrap;
-    width: 75%;
-    margin: auto;
-    font-family: 'Roboto', sans-serif;
-    color: #4C4B4F;
-    h2{
-        text-transform: uppercase;
-    }
-    h3{
-        text-transform: uppercase;
-    }
+body {
+  max-width: 1290px;
+  min-width: 1290px;
+  background-color: light;
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  color: #4c4b4f;
+  h2 {
+    text-transform: uppercase;
+  }
+  h3 {
+    text-transform: uppercase;
+  }
 }
-header{
-    position: absolute;
-    left: 815px;
-    top: 50px
+header {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  padding-right: 20rem;
+  padding-top: 5rem;
+  margin-bottom: -10rem;
+  z-index: 1;
 }
 
-.info{
-    margin: 1rem;
-    border-radius: 25px;
-    width: 23%;
-    text-align: center;
-    background-color: rgb(222, 222, 222);
-    .me{
-        margin-bottom: -3rem;
-        &__pic{
-            background: linear-gradient(-45deg, rgb(222, 222, 222) 50%, #0084C7 50%);
-            border-radius: 25px 25px 0 0;
-            height: 400px;
-            margin-bottom: -2rem;
-            
-            img{
-                
-                margin-top: 50px;
-                width: 250px;
-                border-radius: 50%;
-            }
-        }
-        h2{
-            position: relative;
-            top: -60px;
-            width: 100%;
-            text-align: center;
-            font-size: 3rem;
-            color: #0084C7;
-            margin-bottom: 0;
-            text-transform: uppercase;
-        }
+.info {
+  margin: 1rem;
+  border-radius: 25px;
+  width: 23%;
+  text-align: center;
+  background-color: rgb(222, 222, 222);
+  .me {
+    margin-bottom: -3rem;
+    &__pic {
+      background: linear-gradient(-45deg, rgb(222, 222, 222) 50%, #0084c7 50%);
+      border-radius: 25px 25px 0 0;
+      height: 400px;
+      margin-bottom: -2rem;
 
+      img {
+        margin-top: 50px;
+        width: 250px;
+        border-radius: 50%;
+      }
     }
-    h3{
-        border-bottom: 3px solid #98979B;
-        padding: 1rem 0;
-        margin: 1rem;
-    }
-    .contact{
-        &__sub{
-            font-weight: bolder;
-            
-        }
-    }
-    .languages{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        h3{
-            width: 100%;
-            text-transform: uppercase;
-        }
-        &--text{
-            width: 49%;
-            ul{
-                width: 100%;
-
-                margin: auto;
-                padding: 0;
-                li{
-                    text-align: center;
-                    width: 100%;
-                    list-style: none;
-                    padding: 0.2rem;
-                }
-            }
-}
-        &--progressBar{
-            width: 49%;
-            ul{
-                width: 100%;
-                margin: auto;
-                padding: 0;
-                li{
-                    position: relative;
-                    background: linear-gradient(-90deg, #9A9A9D 70%, #0084C7 30%);
-                    list-style: none;
-                    padding: 0.1rem;
-                    width: 90%;
-                    height: 3px;
-                    margin-bottom: 1.25rem;
-                    top: 5px; 
-                }
-            }
-        }
-    }
-    .logiciels{
-        p{
-            padding: 0 1rem;
-        }
-    }
-    .reseaux{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-        h3{
-            width: 100%;
-            text-transform: uppercase;
-        }
-        img{
-            align-items: center;
-            height: 50px;
-            margin: auto;
-            padding: 1rem;
-        }
+    h2 {
+      position: relative;
+      top: -60px;
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;
+      color: #0084c7;
+      margin-bottom: 0;
     }
   }
-
-.skills{
-
-    width: 66%;
-    padding: 8rem 1rem 1rem 1rem;
+  h3 {
+    border-bottom: 3px solid #98979b;
+    padding: 1rem 0;
     margin: 1rem;
-    background-color: rgb(222, 222, 222);
-    border-radius: 25px;
+  }
+  .contact {
+    &__sub {
+      font-weight: bolder;
+    }
+  }
+  .languages {
     display: flex;
-    flex-direction: column;
-  
-    .intro{
-        margin: 1.5rem;
-        padding-bottom: 2rem;
-        p{
-            padding: 1rem;
-        }
+    flex-wrap: wrap;
+    width: 100%;
+    h3 {
+      width: 100%;
     }
-    h3{
-        border-bottom: 3px solid #98979B;
-        padding: 1rem 0;
+    &--text {
+      width: 49%;
+      ul {
         width: 100%;
-        text-transform: uppercase;
-    }
-    .experiences{
-        margin: 1.5rem;
-        &__step{
-            display: flex;
-            flex-wrap: wrap;
-            margin: 1rem;
-            margin-top: 2rem;
-            &--name{
 
-                width: 29%;
-                margin: 0;
-                text-align: end;
-                font-weight: bolder;
-                margin-right: 2rem;
-                
-            }
-            &--title{
-
-                width: 66%;
-                margin: 0;
-                text-transform: uppercase;
-                font-weight: bolder;
-                
-                
-            }
-            &--loc{
-
-                width: 100%;
-                margin: 0;
-                padding-left: 16rem;
-                color: #0084C7;
-                padding-bottom: 1rem;  
-            }
-            &--years{
-                width:29%;
-                margin: 0;
-                text-align: end;
-                margin-right: 2rem;
-            }
-            &--desc{
-                 
-                width: 66%;
-                margin: 0;
-                
-            }
+        margin: auto;
+        padding: 0;
+        li {
+          text-align: center;
+          width: 100%;
+          list-style: none;
+          padding: 0.2rem;
         }
+      }
     }
-    .hobbies{
-        margin: 2rem;
+    &--progressBar {
+      width: 49%;
+      ul {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        li {
+          position: relative;
+          background: linear-gradient(-90deg, #9a9a9d 70%, #0084c7 30%);
+          list-style: none;
+          padding: 0.1rem;
+          width: 90%;
+          height: 3px;
+          margin-bottom: 1.25rem;
+          top: 5px;
+        }
+      }
+    }
+  }
+  .logiciels {
+    p {
+      padding: 0 1rem;
+    }
+  }
+  .reseaux {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    h3 {
+      width: 100%;
+    }
+    img {
+      align-items: center;
+      height: 50px;
+      margin: auto;
+      padding: 1rem;
+    }
+  }
+}
+
+.skills {
+  width: 66%;
+  padding: 8rem 1rem 1rem 1rem;
+  margin: 1rem;
+  background-color: rgb(222, 222, 222);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+
+  .intro {
+    margin: 1.5rem;
+    padding-bottom: 2rem;
+    p {
+      padding: 1rem;
+    }
+  }
+  h3 {
+    border-bottom: 3px solid #98979b;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  .experiences {
+    margin: 1.5rem;
+    &__step {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1rem;
+      margin-top: 2rem;
+      &--name {
+        width: 29%;
+        margin: 0;
+        text-align: end;
+        font-weight: bolder;
+        margin-right: 2rem;
+      }
+      &--title {
+        width: 66%;
+        margin: 0;
+        font-weight: bolder;
+      }
+      &--loc {
+        width: 100%;
+        margin: 0;
+        padding-left: 16rem;
+        color: #0084c7;
+        padding-bottom: 1rem;
+      }
+      &--years {
+        width: 29%;
+        margin: 0;
+        text-align: end;
+        margin-right: 2rem;
+      }
+      &--desc {
+        width: 66%;
+        margin: 0;
+      }
+    }
+  }
+  .hobbies {
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    h3 {
+      border-bottom: 3px solid #98979b;
+      padding: 1rem 0;
+      width: 100%;
+    }
+    &__content {
+      display: flex;
+      margin: auto;
+      padding-top: 3rem;
+      width: 70%;
+      justify-content: space-between;
+      &--act {
         display: flex;
-        flex-wrap: wrap;
-        h3{
-            border-bottom: 3px solid #98979B;
-            padding: 1rem 0;
-            width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        img {
+          width: 70px;
         }
-        &__content{
-            display: flex;
-            margin: auto;
-            padding-top: 3rem;  
-            width: 70%;
-            justify-content: space-between;          
-            &--act{
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                align-items: center;
-                img{
-                    width: 80px;
-                }
-            }
-        }
+      }
     }
+  }
 }
