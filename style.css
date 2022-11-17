@@ -73,29 +73,39 @@ header {
 .info .languages h3 {
   width: 100%;
 }
-.info .languages--text {
+.info .languages__text {
   width: 49%;
 }
-.info .languages--text ul {
+.info .languages__text ul {
   width: 100%;
   margin: auto;
   padding: 0;
 }
-.info .languages--text ul li {
+.info .languages__text ul li {
   text-align: center;
   width: 100%;
   list-style: none;
   padding: 0.2rem;
 }
-.info .languages--progressBar {
+.info .languages__progressBar {
   width: 49%;
 }
-.info .languages--progressBar ul {
+.info .languages__progressBar ul {
   width: 100%;
   margin: auto;
   padding: 0;
 }
-.info .languages--progressBar ul li {
+.info .languages__progressBar ul .languages__progressBar--1 {
+  position: relative;
+  background: linear-gradient(-90deg, #9a9a9d 50%, #0084c7 50%);
+  list-style: none;
+  padding: 0.1rem;
+  width: 90%;
+  height: 3px;
+  margin-bottom: 1.25rem;
+  top: 5px;
+}
+.info .languages__progressBar ul li {
   position: relative;
   background: linear-gradient(-90deg, #9a9a9d 70%, #0084c7 30%);
   list-style: none;
