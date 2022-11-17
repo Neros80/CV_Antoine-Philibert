@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    background-color: light;
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    color: #4C4B4F;
+}
+header{
+    position: absolute;
+    left: 815px;
+    top: 50px
+}
+
+.info{
+    margin: 1rem;
+    border-radius: 25px;
+    width: 23%;
+    text-align: center;
+    background-color: rgb(222, 222, 222);
+    .me{
+        margin-bottom: -3rem;
+        &__pic{
+            background: linear-gradient(-45deg, rgb(222, 222, 222) 50%, #0084C7 50%);
+            border-radius: 25px 25px 0 0;
+            height: 400px;
+            margin-bottom: -2rem;
+            
+            img{
+                
+                margin-top: 50px;
+                width: 250px;
+                border-radius: 50%;
+            }
+        }
+        h2{
+            position: relative;
+            top: -60px;
+            width: 100%;
+            text-align: center;
+            font-size: 3.5rem;
+            color: #0084C7;
+            margin-bottom: 0;
+        }
+
+    }
+    h3{
+        border-bottom: 3px solid #98979B;
+        padding: 1rem 0;
+        margin: 1rem;
+    }
+    .contact{
+        &__sub{
+            font-weight: bolder;
+            
+        }
+    }
+    .languages{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        h3{
+            width: 100%;
+        }
+        &--text{
+            width: 49%;
+            ul{
+                width: 100%;
+
+                margin: auto;
+                padding: 0;
+                li{
+                    text-align: center;
+                    width: 100%;
+                    list-style: none;
+                    padding: 0.2rem;
+                }
+            }
+}
+        &--progressBar{
+            width: 49%;
+            ul{
+                width: 100%;
+                margin: auto;
+                padding: 0;
+                li{
+                    position: relative;
+                    background: linear-gradient(-90deg, #9A9A9D 70%, #0084C7 30%);
+                    list-style: none;
+                    padding: 0.1rem;
+                    width: 90%;
+                    height: 3px;
+                    margin-bottom: 1.25rem;
+                    top: 5px; 
+                }
+            }
+        }
+    }
+    .reseaux{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        h3{
+            width: 100%;
+        }
+        img{
+            align-items: center;
+            height: 50px;
+            margin: auto;
+            padding: 1rem;
+        }
+    }
+  }
+
+.skills{
+
+    width: 66%;
+    padding: 8rem 1rem 1rem 1rem;
+    margin: 1rem;
+    background-color: rgb(222, 222, 222);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+  
+    .intro{
+        margin: 1.5rem;
+        p{
+            padding-top: 1rem;
+        }
+    }
+    h3{
+        border-bottom: 3px solid #98979B;
+        padding: 1rem 0;
+        width: 100%;
+    }
+    .experiences{
+        margin: 1.5rem;
+        &__step{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1rem;
+            margin-top: 2rem;
+            &--name{
+
+                width: 29%;
+                margin: 0;
+                text-align: end;
+                font-weight: bolder;
+                margin-right: 2rem;
+                
+            }
+            &--title{
+
+                width: 66%;
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: bolder;
+                
+                
+            }
+            &--loc{
+
+                width: 100%;
+                margin: 0;
+                padding-left: 16rem;
+                color: #0084C7;
+                padding-bottom: 1rem;  
+            }
+            &--years{
+                width:29%;
+                margin: 0;
+                text-align: end;
+                margin-right: 2rem;
+            }
+            &--desc{
+                 
+                width: 66%;
+                margin: 0;
+                
+            }
+        }
+    }
+    .hobbies{
+        margin: 2rem
+    }
+}

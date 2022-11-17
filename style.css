@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  background-color: light;
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  color: #4C4B4F;
+}
+
+header {
+  position: absolute;
+  left: 815px;
+  top: 50px;
+}
+
+.info {
+  margin: 1rem;
+  border-radius: 25px;
+  width: 23%;
+  text-align: center;
+  background-color: #dedede;
+}
+.info .me {
+  margin-bottom: -3rem;
+}
+.info .me__pic {
+  background: linear-gradient(-45deg, #dedede 50%, #0084C7 50%);
+  border-radius: 25px 25px 0 0;
+  height: 400px;
+  margin-bottom: -2rem;
+}
+.info .me__pic img {
+  margin-top: 50px;
+  width: 250px;
+  border-radius: 50%;
+}
+.info .me h2 {
+  position: relative;
+  top: -60px;
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #0084C7;
+  margin-bottom: 0;
+}
+.info h3 {
+  border-bottom: 3px solid #98979B;
+  padding: 1rem 0;
+  margin: 1rem;
+}
+.info .contact__sub {
+  font-weight: bolder;
+}
+.info .languages {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.info .languages h3 {
+  width: 100%;
+}
+.info .languages--text {
+  width: 49%;
+}
+.info .languages--text ul {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+.info .languages--text ul li {
+  text-align: center;
+  width: 100%;
+  list-style: none;
+  padding: 0.2rem;
+}
+.info .languages--progressBar {
+  width: 49%;
+}
+.info .languages--progressBar ul {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+.info .languages--progressBar ul li {
+  position: relative;
+  background: linear-gradient(-90deg, #9A9A9D 70%, #0084C7 30%);
+  list-style: none;
+  padding: 0.1rem;
+  width: 90%;
+  height: 3px;
+  margin-bottom: 1.25rem;
+  top: 5px;
+}
+.info .reseaux {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info .reseaux h3 {
+  width: 100%;
+}
+.info .reseaux img {
+  align-items: center;
+  height: 50px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.skills {
+  width: 66%;
+  padding: 8rem 1rem 1rem 1rem;
+  margin: 1rem;
+  background-color: #dedede;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.skills .intro {
+  margin: 1.5rem;
+}
+.skills .intro p {
+  padding-top: 1rem;
+}
+.skills h3 {
+  border-bottom: 3px solid #98979B;
+  padding: 1rem 0;
+  width: 100%;
+}
+.skills .experiences {
+  margin: 1.5rem;
+}
+.skills .experiences__step {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+.skills .experiences__step--name {
+  width: 29%;
+  margin: 0;
+  text-align: end;
+  font-weight: bolder;
+  margin-right: 2rem;
+}
+.skills .experiences__step--title {
+  width: 66%;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.skills .experiences__step--loc {
+  width: 100%;
+  margin: 0;
+  padding-left: 16rem;
+  color: #0084C7;
+  padding-bottom: 1rem;
+}
+.skills .experiences__step--years {
+  width: 29%;
+  margin: 0;
+  text-align: end;
+  margin-right: 2rem;
+}
+.skills .experiences__step--desc {
+  width: 66%;
+  margin: 0;
+}
+.skills .hobbies {
+  margin: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
