@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 body {
-  max-width: 1290px;
   min-width: 1290px;
   background-color: light;
   display: flex;
   flex-wrap: wrap;
   width: 75%;
   margin: auto;
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #4c4b4f;
 }
 body h2 {
@@ -32,13 +31,13 @@ header {
   border-radius: 25px;
   width: 23%;
   text-align: center;
-  background-color: #dedede;
+  background-color: #efeef2;
 }
 .info .me {
   margin-bottom: -3rem;
 }
 .info .me__pic {
-  background: linear-gradient(-45deg, #dedede 50%, #0084c7 50%);
+  background: linear-gradient(-45deg, #efeef2 50%, #0084c7 50%);
   border-radius: 25px 25px 0 0;
   height: 400px;
   margin-bottom: -2rem;
@@ -48,7 +47,7 @@ header {
   width: 250px;
   border-radius: 50%;
 }
-.info .me h2 {
+.info .me h1 {
   position: relative;
   top: -60px;
   width: 100%;
@@ -62,8 +61,21 @@ header {
   padding: 1rem 0;
   margin: 1rem;
 }
-.info .contact__sub {
-  font-weight: bolder;
+.info .contact {
+  padding-bottom: 3rem;
+}
+.info .contact__btn {
+  position: relative;
+  top: 25px;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 25px;
+  background-color: #0084c7;
+  color: whitesmoke;
+}
+.info .contact__btn:hover {
+  background-color: #3190c0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
 }
 .info .languages {
   display: flex;
@@ -135,18 +147,23 @@ header {
 
 .skills {
   width: 66%;
-  padding: 8rem 1rem 1rem 1rem;
+  padding: 3rem 1rem 1rem 1rem;
   margin: 1rem;
-  background-color: #dedede;
+  background-color: #efeef2;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
+}
+.skills h2 {
+  text-align: center;
+  font-size: 2rem;
 }
 .skills .intro {
   margin: 1.5rem;
   padding-bottom: 2rem;
 }
 .skills .intro p {
+  font-size: 1.1rem;
   padding: 1rem;
 }
 .skills h3 {
@@ -158,39 +175,42 @@ header {
   margin: 1.5rem;
 }
 .skills .experiences__step {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1rem;
-  margin-top: 2rem;
+  display: grid;
+  grid-template-areas: "one two two" ". three three" "for five five";
+  grid-template-columns: 280px 1fr 1fr;
+  grid-column-gap: 1rem;
+  padding-bottom: 1rem;
 }
 .skills .experiences__step--name {
-  width: 29%;
+  grid-area: one;
   margin: 0;
+  padding: 0.5rem 0;
+  height: 20px;
   text-align: end;
   font-weight: bolder;
-  margin-right: 2rem;
 }
 .skills .experiences__step--title {
-  width: 66%;
   margin: 0;
+  padding: 0.5rem 0;
   font-weight: bolder;
+  text-transform: uppercase;
+  grid-area: two;
+  height: 20px;
 }
 .skills .experiences__step--loc {
-  width: 100%;
   margin: 0;
-  padding-left: 16rem;
   color: #0084c7;
+  grid-area: three;
   padding-bottom: 1rem;
 }
 .skills .experiences__step--years {
-  width: 29%;
   margin: 0;
   text-align: end;
-  margin-right: 2rem;
+  grid-area: for;
 }
 .skills .experiences__step--desc {
-  width: 66%;
   margin: 0;
+  grid-area: five;
 }
 .skills .hobbies {
   margin: 2rem;
