@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 body {
-  // max-width: 1290px;
-  min-width: 1290px;
+  max-width: 1260px;
+  min-width: 1440px;
   background-color: light;
   display: flex;
   flex-wrap: wrap;
@@ -32,6 +32,7 @@ header {
   width: 23%;
   text-align: center;
   background-color: #efeef2;
+
   .me {
     margin-bottom: -3rem;
     &__pic {
@@ -243,6 +244,60 @@ header {
         img {
           width: 70px;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    min-width: 400px;
+    width: 100%;
+    align-items: center;
+  }
+  .info {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    h1 {
+      padding-top: 5rem;
+    }
+  }
+  .skills {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    h3 {
+      text-align: center;
+      padding: 1rem 0;
+      width: 100%;
+    }
+    .experiences {
+      &__step {
+        display: grid;
+        grid-template-areas:
+          "one two two"
+          ". three three"
+          "for five five";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+    .hobbies {
+      align-items: center;
+      &__content {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .experiences {
+    &__step {
+      &--loc {
+        padding-top: 1rem;
       }
     }
   }

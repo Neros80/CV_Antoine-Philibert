@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 body {
-  min-width: 1290px;
+  max-width: 1260px;
+  min-width: 1440px;
   background-color: light;
   display: flex;
   flex-wrap: wrap;
@@ -237,6 +238,53 @@ header {
 }
 .skills .hobbies__content--act img {
   width: 70px;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    min-width: 400px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .info {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  .info h1 {
+    padding-top: 5rem;
+  }
+
+  .skills {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+  .skills h3 {
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  .skills .experiences__step {
+    display: grid;
+    grid-template-areas: "one two two" ". three three" "for five five";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  .skills .hobbies {
+    align-items: center;
+  }
+  .skills .hobbies__content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .experiences__step--loc {
+    padding-top: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
