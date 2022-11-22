@@ -169,7 +169,7 @@ header {
     padding-bottom: 2rem;
     p {
       font-size: 1.1rem;
-      padding: 1rem;
+      padding: 3rem 1rem 0 1rem;
     }
   }
   h3 {
@@ -187,7 +187,7 @@ header {
         ". five five";
       grid-template-columns: 280px 1fr 1fr;
       grid-column-gap: 1rem;
-      padding-bottom: 1rem;
+      padding: 2.5rem 0 0 0;
       &--name {
         grid-area: one;
         margin: 0;
