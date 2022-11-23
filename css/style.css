@@ -317,9 +317,17 @@ header {
     padding: 2rem 3rem;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
   h2 {
-    padding-top: 3rem;
+    margin: auto;
+    padding-top: 2rem;
+  }
+
+  .hobbies__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
   }
 }
 
